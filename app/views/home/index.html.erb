@@ -1,1 +1,10 @@
 <h1>Home</h1>
+Who You are ?
+<%= link_to 'Tutor', tutor_home_index_path %>
+<%= link_to 'Student', student_home_index_path %>
+<br/>
+<% if current_user %>
+  <%= menu_item "Log Out", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to 'Login', new_user_session_path %>
+<% end %>
