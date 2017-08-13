@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20170812135430) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
+    t.string "type"
     t.string "auth_token"
     t.boolean "is_active", default: true
     t.boolean "is_blocked", default: false

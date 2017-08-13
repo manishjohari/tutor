@@ -31,6 +31,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
       # t.datetime :locked_at
 
       # more coloumns
+      t.string :type
       t.string :auth_token, index: true
       t.boolean :is_active, default: true
       t.boolean :is_blocked, default: false
